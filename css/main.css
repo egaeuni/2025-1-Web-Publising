@@ -121,6 +121,7 @@ strong {
     border-radius: 8px;
     object-fit: cover;
     margin-right: 50px;
+    margin-top: 140px;
 }
 
 .info {
@@ -180,6 +181,7 @@ li > img {
     align-items: center;
 }
 
+/* contact */
 .contact {
     margin-top: 150px;
     margin-bottom: 100px;
@@ -192,6 +194,8 @@ li > img {
     width: auto;
 }
 
+
+/* footer */
 footer {
     background-image: url('../images/footer.png');
     background-size: cover;
