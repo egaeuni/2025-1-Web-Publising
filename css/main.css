@@ -181,6 +181,117 @@ li > img {
     align-items: center;
 }
 
+/* favorite */
+.favorite h2 {
+    color: #279B00;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 120px;
+    padding-bottom: 10px;
+}
+
+.favorite {
+    text-align: center;
+}
+
+.favorite-wrapper {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 공통 카드 스타일 */
+.favorite-card {
+    display: flex;
+    width: 300px;
+    height: 480px;
+    transition: width 0.4s ease;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.movie-card {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Hover 시 확장 */
+.favorite-card:hover {
+    width: 1000px;
+}
+
+/* 왼쪽 설명 영역 */
+.book-description{
+    width: 0;
+    opacity: 0;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    padding-right: 0;
+    padding-top: 100px;
+}
+
+.movie-description{
+    width: 0;
+    opacity: 0;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    padding-left: 0;
+    padding-top: 100px;
+}
+
+.favorite-card:hover .movie-description {
+    width: 100%;
+    opacity: 1;
+    padding-left: 20px;
+}
+
+.favorite-card:hover .book-description {
+    width: 100%;
+    opacity: 1;
+    padding-right: 20px;
+}
+
+.book-description h3, .movie-description h3 {
+    color: #3f9e45;
+    font-weight: bolder;
+}
+
+.book-description blockquote, .movie-description blockquote {
+    margin: 8px 0;
+    padding-left: 12px;
+    border-left: 3px solid #ccc;
+    font-style: italic;
+    color: #444;
+}
+
+/* 오른쪽 이미지 영역 */
+.favorite-image {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.favorite-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 6px;
+    padding-top: 5px;
+}
+
+.media-title {
+    margin-top: 10px;
+}
+
+/* project */
+.project {
+    margin-top: 150px;
+    padding-top: 137px;
+}
+
 /* contact */
 .contact {
     margin-top: 150px;
