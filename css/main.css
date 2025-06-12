@@ -5,17 +5,18 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: white;
     color: #333;
     text-align: center;
 }
 
 header {
-    background: #222;
-    color: white;
+    background-image: url(../images/header.png);
+    background-size: cover;
+    height: 50px;
     padding: 10px 0;
 }
-  
+
 header ul {
     list-style: none;
     display: flex;
@@ -24,7 +25,8 @@ header ul {
 }
 
 header ul li a {
-    color: white;
+    color: #8fc59b;
+    font-weight: 500;
     text-decoration: none;
 }
 
@@ -34,11 +36,23 @@ div {
 
 .home {
     text-align: center;
+    position: relative;
+    display: inline-block;
 }
 
-.home img {
-    width: 450px;
+.base {
+    display: block;
+    width: 500px;
+}
+
+.overlay {
+    position: absolute;
+    top: 140px;     /* 겹치는 위치 조절 */
+    left: 190px;
+    width: 300px;
     height: auto;
+    text-align: center;
+    pointer-events: none; /* 클릭 막기 원할 경우 */
 }
 
 h1, h2, h3 {
@@ -85,4 +99,24 @@ li > img {
 .contact img {
     height: 50px;
     width: auto;
+}
+
+footer {
+    background-image: url('../images/footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: #8fc59b;
+    font-size: 16px;
+    text-align: center;
+
+    height: 80px; /* footer.png 높이보다 살짝 크거나 같게 */
+    display: flex;
+    justify-content: center; /* 가로 가운데 */
+    align-items: center;     /* 세로 가운데 */
+}
+
+footer > p {
+    padding-top: 40px;
 }
