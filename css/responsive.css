@@ -10,6 +10,7 @@
         /* 헤더 */
     header {
         height: 100px;
+        z-index: 1000;
     }
         
     header ul {
@@ -20,8 +21,9 @@
         
     /* 홈 */
     .home {
-        margin-top: 100px;
+        margin-top: 130px;
         margin-left: 20px;
+        margin-bottom: 130px;
     }
         
     .home h1 {
@@ -40,7 +42,7 @@
         
     /* About */
     .about {
-        padding: 40px 20px;
+        padding: 80px 20px 0 auto;
         margin-top: 50px;
     }
         
@@ -60,16 +62,19 @@
         }
     
     .info-row {
-        flex-direction: column;
+        flex-direction: row;
         gap: 5px;
     }
 
     .label {
-        width: auto;
+        width: 100px;
+        text-align: left;
+        margin-left: 45px;
     }
     
     .career-list .date {
-        width: auto;
+        width: 100px;
+        text-align: left;
     }
 
     /* Favorite */
@@ -81,7 +86,7 @@
     .favorite-wrapper {
         flex-direction: column;
         align-items: center;
-        padding: 0 20px;
+        padding: 0 10px;
         margin-left: 120px;
     }
         
@@ -95,6 +100,7 @@
         scroll-behavior: smooth;
         scroll-snap-type: x mandatory;
         box-shadow: none;
+        margin-left: -60px;
     }
 
     .favorite-card:hover {
@@ -132,7 +138,7 @@
         width: 90%;
         max-width: 400px;
         height: auto;
-        margin: 0;
+        margin-left: 60px;
     }
         
     .swiper-slide {
@@ -142,11 +148,12 @@
     /* Contact */
     .contact {
         margin-top: 100px;
-        padding-top: 50px;
+        padding-top: 100px;
+        padding-bottom: 150px;
     }
         
     .contact h2 {
-        font-size: 18px;
+        font-size: 20px;
     }
         
     .contact li {
@@ -156,8 +163,12 @@
     }
         
     .contact img {
-        height: 24px;
+        height: 25px;
         margin-right: 20px;
+    }
+
+    .contact p, .contact p {
+        font-size: 20px;
     }
         
     /* Footer */
