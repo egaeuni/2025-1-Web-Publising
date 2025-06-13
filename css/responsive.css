@@ -153,13 +153,13 @@
     }
         
     .contact h2 {
-        font-size: 20px;
+        font-size: 19px;
     }
         
     .contact li {
         margin: 30px auto 15px auto;
-        justify-content: center;
-        padding-left: 20px;
+        justify-content: left;
+        padding-left: 90px;
     }
         
     .contact img {
@@ -167,8 +167,8 @@
         margin-right: 20px;
     }
 
-    .contact p, .contact p {
-        font-size: 20px;
+    .contact p, .contact span, .contact a {
+        font-size: 19x;
     }
         
     /* Footer */
