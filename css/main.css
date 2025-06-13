@@ -203,12 +203,11 @@ li > img {
 
 .favorite-wrapper {
     display: flex;
-    gap: 100px;
+    gap: 50px;
     align-items: center;
     justify-content: center;
 }
 
-/* 공통 카드 스타일 */
 .favorite-card {
     display: flex;
     width: 300px;
@@ -353,13 +352,15 @@ li > img {
 .contact img {
     height: 32px;
     width: auto;
-    align-items: center;
+    align-items: left;
     margin-right: 50px;
 }
 
 .contact li {
     display: flex;
-    margin: 50px auto 20px 580px;
+    margin: 50px auto 20px auto;
+    justify-content: center;
+    gap: 30px;
 }
 
 .contact h2 {
@@ -370,7 +371,7 @@ li > img {
 
 .contact p {
     width: 100px;
-    padding-right: 30px;
+    padding-right: 10px;
     font-weight: bold;
     text-align: left;
 }

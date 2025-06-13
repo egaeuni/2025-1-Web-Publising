@@ -61,3 +61,19 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 });
+
+// 페이지 로드 시 모든 favorite-card의 스크롤을 왼쪽 끝으로
+window.addEventListener('load', function() {
+    const favoriteCards = document.querySelectorAll('.favorite-card');
+    favoriteCards.forEach(card => {
+        card.scrollLeft = 0;
+    });
+});
+
+// 새로고침할 때도 초기화
+window.addEventListener('beforeunload', function() {
+    const favoriteCards = document.querySelectorAll('.favorite-card');
+    favoriteCards.forEach(card => {
+        card.scrollLeft = 0;
+    });
+});

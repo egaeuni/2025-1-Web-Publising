@@ -1,0 +1,171 @@
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+        
+    .container {
+        padding: 0 15px;
+    }
+        
+        /* 헤더 */
+    header {
+        height: 100px;
+    }
+        
+    header ul {
+        gap: 50px;
+        font-size: 18px;
+        padding-top: 10px;
+    }
+        
+    /* 홈 */
+    .home {
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+        
+    .home h1 {
+        font-size: 45px;
+    }
+        
+    .base {
+        width: 100%;
+        max-width: 400px;
+    }
+        
+    .overlay {
+        left: 100px;
+        width: 250px;
+    }
+        
+    /* About */
+    .about {
+        padding: 40px 20px;
+        margin-top: 50px;
+    }
+        
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+        
+    .about-container img {
+        width: 60%;
+        margin: 0;
+    }
+        
+    .info {
+        margin-top: 0;
+        text-align: center;
+        }
+    
+    .info-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .label {
+        width: auto;
+    }
+    
+    .career-list .date {
+        width: auto;
+    }
+
+    /* Favorite */
+    .favorite h2 {
+        padding-left: 20px;
+        text-align: center;
+    }
+        
+    .favorite-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        margin-left: 120px;
+    }
+        
+    .favorite-card {
+        transform-origin: left;
+        transition: width 0.4s ease;
+        width: 65%;
+        height: 80%;
+        overflow-x: auto;
+        padding: 20px;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        box-shadow: none;
+    }
+
+    .favorite-card:hover {
+        width: 100%;
+    }
+
+    .movie-description,
+    .book-description {
+        width: 500px !important;
+        opacity: 1 !important;
+        padding-right: 20px;
+        flex-shrink: 20px;
+        min-width: 400px;
+        margin-top: -50px;
+    }
+
+    .favorite-image img {
+        width: 250px;
+        padding-right: 50px;
+        scroll-snap-align: start;
+    }
+        
+    /* Project */
+    .project h2 {
+        padding-left: 20px;
+        text-align: center;
+    }
+        
+    .card-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+        
+    .card {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        margin: 0;
+    }
+        
+    .swiper-slide {
+        gap: 20px;
+    }
+        
+    /* Contact */
+    .contact {
+        margin-top: 100px;
+        padding-top: 50px;
+    }
+        
+    .contact h2 {
+        font-size: 18px;
+    }
+        
+    .contact li {
+        margin: 30px auto 15px auto;
+        justify-content: center;
+        padding-left: 20px;
+    }
+        
+    .contact img {
+        height: 24px;
+        margin-right: 20px;
+    }
+        
+    /* Footer */
+    footer {
+        height: 100px;
+    }
+        
+    footer > p {
+        padding-top: 60px;
+    }
+    }
