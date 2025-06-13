@@ -247,7 +247,7 @@ li > img {
     transition: all 0.4s ease;
     overflow: hidden;
     padding-left: 0;
-    padding-top: 100px;
+    padding-top: 75px;
 }
 
 .favorite-card:hover .movie-description {

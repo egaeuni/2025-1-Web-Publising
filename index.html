@@ -2,13 +2,18 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>이가은 포트폴리오</title>
+  <title>20241243 이가은 포트폴리오</title>
+  <!-- CSS & JS -->
   <script src="js/main.js"></script>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Protest+Riot&display=swap" rel="stylesheet">
   
+  <!-- Swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
@@ -64,7 +69,6 @@
     </div>
   </section>
 
-
   <!-- Favorite -->
   <section class="favorite" id="about">
     <h2>My Favorite</h2>
@@ -80,7 +84,9 @@
           <br>
           <h3>좋아하는 코멘트</h3>
           <p>
-            양은 인간으로 사는 일을 열망하는 게 아니라, 인간이 자신에게 필요한 진짜를 찾는 ‘방법’을 궁금했다. 존재의 의무만으로 인간이 삶을 행복하게 사는 게 아니듯, 양에게도 자신만이 가질 수 있는 믿음이 필요했다. 행복해? 란 질문이 자신에게 맞는 질문인지 되묻고 싶지 않은 것처럼.
+            양은 인간으로 사는 일을 열망하는 게 아니라, 인간이 자신에게 필요한 진짜를 찾는 ‘방법’을 궁금했다.
+            존재의 의무만으로 인간이 삶을 행복하게 사는 게 아니듯, 양에게도 자신만이 가질 수 있는 믿음이 필요했다.
+            행복해? 란 질문이 자신에게 맞는 질문인지 되묻고 싶지 않은 것처럼.
             <br> - 브런치스토리 ‘우란’ <a href="https://brunch.co.kr/@dkdnfk916/441/"><span>전문</span></a> -
           </p>
         </div>
@@ -163,5 +169,14 @@
     </section>
 
     <footer><p>| 덕성여자대학교 웹퍼블리싱 과제 | 20241243 이가은 |</p> </footer>
+
+    <script>
+      window.addEventListener('load', function () {
+        const scrollableCards = document.querySelectorAll('.favorite-card');
+        scrollableCards.forEach(card => {
+          card.scrollLeft = 0;
+        });
+      });
+    </script>
 </body>
 </html>
