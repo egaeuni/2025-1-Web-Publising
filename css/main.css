@@ -346,15 +346,38 @@ li > img {
 /* contact */
 .contact {
     margin-top: 150px;
-    margin-bottom: 100px;
-    padding-top: 100px;
+    padding-top: 137px;
+    margin-bottom: -30px;
 }
 
 .contact img {
-    height: 50px;
+    height: 32px;
     width: auto;
+    align-items: center;
+    margin-right: 50px;
 }
 
+.contact li {
+    display: flex;
+    margin: 50px auto 20px 580px;
+}
+
+.contact h2 {
+    color: #279B00;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.contact p {
+    width: 100px;
+    padding-right: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.contact span {
+    font-weight: bolder;
+}
 
 /* footer */
 footer {
@@ -367,10 +390,10 @@ footer {
     font-size: 16px;
     text-align: center;
 
-    height: 137px; /* footer.png 높이보다 살짝 크거나 같게 */
+    height: 137px;
     display: flex;
-    justify-content: center; /* 가로 가운데 */
-    align-items: center;     /* 세로 가운데 */
+    justify-content: center;
+    align-items: center; 
 }
 
 footer > p {
