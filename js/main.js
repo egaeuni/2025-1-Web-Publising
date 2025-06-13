@@ -49,3 +49,15 @@ window.addEventListener("scroll", function () {
         }
     });
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+    var mySwiper = new Swiper(".swiper-container", {
+        direction: "horizontal",
+        loop: true,
+        speed: 400,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+    });
+});
